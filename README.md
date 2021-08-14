@@ -1,14 +1,3 @@
-# <p align="center">TGramIndoBot
-
-### <p align="center">Sebuah bot Telegram sederhana untuk memoderasi grup
-
-`TGramIndoBot` adalah sebuah bot sederhana untuk memoderasi grup [Telegram Indonesia](https://t.me/tgramindo).  
-Bot ini adalah _fork_ dari [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer) _branch_ `openshift` yang ditulis dalam JavaScript dan menggunakan mongoDB sebagai _database_.
-
-`TGramIndoBot` dikhususkan untuk diterapkan di [OpenShift](https://www.openshift.com/). Jika Anda membutuhkan bot yang bisa diterapkan ke layanan lain, silahkan rujuk [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer).
-
-Silakan coba [@tgramindobot](https://t.me/tgramindobot) untuk demo.
-
 ### Perintah
 
 Awali perintah dengan `/`, `!`, atau `#`.
@@ -27,36 +16,10 @@ Perintah | Rincian | Status | Superuser | Admin Global | Admin Grup | Pengguna b
 `/ban` | _Ban user_ dari grup | ✅ | ❌ | ❌ | ✅ | ❌
 `/start` or `/help` | Tampilkan bantuan dalam beragam bahasa | ✅ | ✅ | ✅ | ✅ | ✅
 
-### Filters
-
-Aksi| Rincian | Status 
---- | --- | --- | 
-**Entry Checks** | Secara otomatis melakukan _ban_ terhadap _user_ yang memasuki grup yang dimoderasi karena dia telah di-_ban_ secara global | ✅ 
-**Message Checks** | Secara otomatis melakukan _ban_ terhadap _user_ yang telah di-_ban_ secara global ketika mendapati _user_ tersebut mengirim pesan | ✅ 
-
-
-## Setup
-
-### Node.JS
-
+#
 Anda perlu Node.js versi > 4, untuk mengunduh _dependencies_ dan menjalankan bot ini.  
 Untuk pengguna Windows, cukup klik [berkas ini](https://nodejs.org/dist/v7.4.0/node-v7.4.0-x64.msi) untuk memasangnya.  
 Untuk pengguna Unix, gunakan cara sesuai distro atau rujuk [laman ini](https://nodejs.org/en/download/).
-
-### Telegram
-
-<img src="http://i.imgur.com/84FFJo2.png" height="50">
-
-- Buat bot, baca bagaimana caranya [di sini](https://core.telegram.org/bots/faq#how-do-i-create-a-bot)
-- Matikan _bot privacy_, kirim `/setprivacy` ke [@BotFather](https://telegram.me/BotFather).  
-Baca informasi lebih lanjut mengenai _privacy_ [di sini](https://core.telegram.org/bots/faq#what-messages-will-my-bot-get)
-- Buat sebuah kanal pencatat (_log channel_), dan dapatkan `chat_id` kanal tersebut dengan cara meneruskan pesan dari kanal tersebut ke [@getidsbot](https://telegram.me/getidsbot). `chat_id` selalu diawali dengan `-100`. 
-- Dapatkan `user_id` Anda dengan cara yang sama tersebut di atas.
-- Buka `data/config.json` dan masukkan _token_, `chat_id`, dan `user_id`.
-
-### Openshift
-
-<img src="http://www.opencloudconf.com/images/openshift_logo.png" width="200">
 
 ```bash
 # Pastikan Anda telah memasang paket Node.JS! 
@@ -83,4 +46,4 @@ $ git push openshift master --force
 
 ## Lisensi
 
-Dirilis dibawah lisensi AGPL-v3.0, lihat berkas [LICENSE](https://github.com/rizaumami/TGramIndoBot/blob/master/LICENSE).
+Dirilis dibawah lisensi AGPL-v3.0, lihat berkas [LICENSE](https://github.com/lanzvian/LanzBot-2/blob/master/LICENSE).
