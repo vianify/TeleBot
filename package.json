@@ -2,9 +2,9 @@
   "name": "tgramindobot",
   "version": "3.3.0",
   "description": "A simple, plugin-wielding, and multipurpose Node.js Telegram bot.",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   },
   "keywords": [
     "telegram",
